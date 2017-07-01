@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  background: #282B31;
+}
+
+p {
+  color: #ffffff;
+  opacity: .5;
+  font-size: 0.875em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.9375em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+main, footer, header {
+  display: inline-block;
+  width: 100%;
+}

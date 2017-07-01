@@ -1,0 +1,217 @@
+// header
+
+header {
+  background-color: $secondary-color;
+  padding: 23px 0 22px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+
+.header-detail {
+  margin-bottom: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  opacity: 0.12;
+  background-color: #373e4a;
+  color: #fff;
+  opacity: .5;
+  font-size: 1em;
+  border: none;
+  padding: 17px 65px 16px 25px;
+}
+
+.search {
+  position: relative;
+}
+
+.search::after {
+  content: url('/images/icon-search.svg');
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.user__menu-wrapper {
+  color: #fff;
+  opacity: 1;
+}
+
+.user__menu-toggle {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 54px;
+}
+
+.user__icon {
+  margin-right: 15px;
+}
+
+.user__name {
+  margin-right: 8px;
+}
+
+//main
+
+main {
+  background-color: #282b31;
+}
+
+
+
+// footer
+
+footer {
+  background-color: $primary-color;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.footer-detail {
+  margin-top: 0;
+}
+
+.footer__copy {
+  padding: 40px 0 41px;
+}
+
+
+
+
+// grid
+
+.main-title, .grid-item__title {
+  color: #fff;
+}
+
+.main-title {
+  margin: 0 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: .9%;
+  margin-bottom: 15px;
+}
+
+.grid-title {
+  color: #ffcd00;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.grid-item {
+  max-width: 275px;
+  background-color: #32363c;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 45px;
+}
+
+.grid-item__poster-wrapper {
+  width: 100%;
+  height: 155px;
+}
+
+.grid-item__poster {
+  object-fit: cover;
+  height: 155px;
+  max-height: 155px;
+  width: 100%;
+}
+
+.grid-item__main-info {
+  background-color: #32363c;
+  padding: 13px 15px 15px;
+}
+
+.grid-item__secondary-info {
+  background-color: #282b31;
+  padding: 11px 15px;
+}
+
+.grid-item__main-info-details, .grid-item__secondary-info-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-item__title {
+  margin: 0 0  13px 0;
+}
+
+
+// detail
+
+.detail-wrapper {
+  background: url('http://netflixroulette.net/api/posters/880640.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.detail {
+  opacity: 0.95;
+  background-color: #1b1d1f;
+  padding: 50px 61px 50px 102px;
+  width: 590px;
+  display: inline-block;
+  float: left;
+}
+
+.watch-wrapper {
+  width: 500px;
+  display: inline-block;
+  float: left;
+}
+
+
+.detail p {
+  font-size: 1.125em;
+  line-height: 1.42em;
+  margin-bottom: 30px;
+}
+
+.detail__category {
+  background-color: #32363c;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  padding: 6px 14px;
+  opacity: 1;
+  width: auto;
+}
+
+.detail__release-year {
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  padding-bottom: 15px;
+}
+
+.detail__runtime, .detail__favorite {
+  float: right;
+}
+
+.watch__btn {
+  width: auto;
+  height: 88px;
+  background-color: rgba(27, 29, 31, 0.75);
+  border: solid 2px #ffffff;
+  font-size: 1.75em;
+  padding: 25px 40px;
+  margin: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  display: inline-block;
+}
