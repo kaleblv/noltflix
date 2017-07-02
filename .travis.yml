@@ -4,7 +4,7 @@ env:
 
 
 after_script:
-  - node_modules/.bin/now-travis
+  - NOW_ALIAS=noltflix.now.sh node_modules/.bin/now-travis
 
 branches:
   only:
