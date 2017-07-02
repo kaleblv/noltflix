@@ -28,4 +28,3 @@ matrix:
 # TODO: reenable after we ship 1.0.
 #    - node_js: 6
 #      env: USE_YARN=yes TEST_SUITE=simple
-Contact GitHub API Training Shop Blog About
