@@ -37,7 +37,6 @@ class Header extends React.Component {
                 </p>
               </div>
             <SearchForm/>
-
             </div>
           </div>
         </div>

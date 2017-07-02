@@ -19,14 +19,13 @@ class SearchForm extends React.Component {
 
     event.preventDefault();
 
-    fetch('http://netflixroulette.net/api/api.php?title=' + this.searchInput.value )
+    fetch('https://netflixroulette.net/api/api.php?title=' + this.searchInput.value )
     .then((response) => {
         return response.json()
     })
     .then((search) => {
 
         this.setState({ search });
-
 
         if (this.state.search.show_title) {
           localStorage.setItem(`detail-item`,JSON.stringify(this.state.search));
@@ -39,12 +38,12 @@ class SearchForm extends React.Component {
   render() {
     return (
       <div className="search">
-        <form className="search__form" onSubmit={(e) => this.goToDetail(e)}>
+        <form className="search__form" onSubmit={this.goToDetail}>
           <input className="search__input" type="text" name="" defaultValue="" ref={(input) => {
             this.searchInput = input
           }} placeholder="Search Media"/>
           <button type="submit" className="search__submit-btn">
-                          <img src={iconSearch} className="noltflix_logo" alt=""/>
+            <img src={iconSearch} className="noltflix_logo" alt=""/>
           </button>
         </form>
       </div>

@@ -11,8 +11,6 @@ class App extends React.Component {
   constructor() {
     super();
 
-    //this.addFavorite = this.addFavorite.bind(this);
-
   }
 
   state = {
@@ -44,6 +42,14 @@ class App extends React.Component {
   }
 
 
+  addMovie (movie) {
+    const movies = {...this.state.movies};
+    const timestamp = Date.now();
+    movies[`movie-${timestamp}`] = movie;
+    this.setState({movies});
+  }
+
+
 
 
   render() {
@@ -58,7 +64,7 @@ class App extends React.Component {
               {
                 Object
                   .keys(this.state.movies)
-                  .map(key => <MovieGrid key={key} index={key} details={this.state.movies[key]} /> )
+                  .map(key => <MovieGrid key={key} index={key} details={this.state.movies[key]} addMovie={this.addMovie} /> )
               }
             </section>
             <h2 className="grid-title">Tv Shows (<span className="grid_quantity"></span>)</h2>

@@ -175,6 +175,7 @@ footer {
 .detail-wrapper {
   background: url('http://netflixroulette.net/api/posters/880640.jpg') no-repeat center center;
   background-size: cover;
+  margin-bottom: -3px;
 }
 
 .detail {
@@ -210,6 +211,10 @@ footer {
 .detail__release-year {
   border-bottom: 1px solid rgba(255, 255, 255, .5);
   padding-bottom: 15px;
+}
+
+.detail__favorite {
+  cursor: pointer;
 }
 
 .detail__runtime, .detail__favorite {
