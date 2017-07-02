@@ -514,7 +514,21 @@ footer {
   padding: 50px 61px 50px 102px;
   width: 590px;
   display: inline-block;
-  float: left; }
+  float: left;
+  position: relative; }
+
+.detail__back {
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  cursor: pointer; }
+
+.detail__back:hover {
+  transition: .8s;
+  opacity: .8; }
+
+.detail__back:active {
+  opacity: .6; }
 
 .watch-wrapper {
   width: 500px;

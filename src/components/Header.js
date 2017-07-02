@@ -23,9 +23,7 @@ class Header extends React.Component {
       <header>
         <div className="content">
           <div className="header-content">
-            <a href="/">
-              <img src={logo} className="noltflix_logo" alt=""/>
-            </a>
+            <a href="/"><img src={logo} className="noltflix_logo" alt=""/></a>
             <div className="header-controls">
               <div className="user">
                 <p className="user__menu-wrapper">
