@@ -1,7 +1,13 @@
+---
+language: node_js
+
+node_js:
+  - 6
+  - 8
+
 env:
   global:
     secure: YwQWDqqSI54akoIm3q1iyYd2ZN4HB2q8e5is9XjnHidpksMGzQq0E4EHrbyay6p5oHMLmPuTuLcQr0hHSI9XDPOMNWfGbO7ot7eY1z64OGWueTJg0IH+YEExeQ34GfcJlGbNGfM1XPHgzrkAps5GLRnbzfRT46TjCS+5+4/EwobrFxRkst48EsnSIBmICpT4ORMfA1GTVy47S+pEO06KJ7S1+49sU1cOlW7UAV/3ZHKiTcBttQtHKG4zoypniq+8DsS60fQg1VR6epRn7N+P2tdFgHkwzmXi9gD3lmbkBxegcVva7v5q9/Sbs2+7uH7O9W1yFg6vse51L9AKgqFnXoHaNwxwWF26F5Taxy9XQPr7+MUI0GST8rBKfL7AP5ju6cIEg7+niAQ9YS/CpSMeyrZZvzbmeyKuFkCVV4SvYc2jGdJyDgpM6x3ppPpa+YjXOkZ0Tb4F+GqIfLGvMZ7Vqt39TpwUVUYuDDj6OCfBD+AAWubExERx8nU89g0mHVUz0TTslDRqtJYZbaMC8Gr826VbXb9/mnDyyFItNvmcaQ7rUt5oEVFZ00D8ljMGpmflMRaEdwzVz0cEw6m0AFVBa9ATh5SmRZCRCK6fxThWVfut92sTg0wYnejCJGuv0lF97at7W+PSg101gvBgP/Z/SDn4XHZvECbbE/zADj7XWF0=
-
 
 after_script:
   - NOW_ALIAS=noltflix.now.sh node_modules/.bin/now-travis
