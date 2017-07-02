@@ -463,7 +463,8 @@ footer {
   max-width: 275px;
   background-color: #32363c;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  cursor: pointer; }
 
 .grid-item__poster-wrapper {
   width: 100%;
