@@ -45,6 +45,11 @@ header {
   right: 0;
 }
 
+.search__submit-btn:hover {
+  transition: .8s;
+  opacity: .8;
+}
+
 .search {
   position: relative;
 }
@@ -67,6 +72,11 @@ header {
   display: flex;
   align-items: center;
   margin-right: 54px;
+}
+
+.user__menu-toggle:hover {
+  transition: .8s;
+  opacity: .8;
 }
 
 .user__icon {
@@ -139,6 +149,11 @@ footer {
   cursor: pointer;
 }
 
+.grid-item:hover {
+  transition: .8s;
+  opacity: .8;
+}
+
 .grid-item__poster-wrapper {
   width: 100%;
   height: 155px;
@@ -205,8 +220,17 @@ footer {
   background-color: #32363c;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   padding: 6px 14px;
-  opacity: 1;
   width: auto;
+  cursor: pointer;
+}
+
+.detail__category:hover {
+  transition: .8s;
+  opacity: .8;
+}
+
+.detail__category-wrapper {
+  opacity: 1;
 }
 
 .detail__release-year {
@@ -216,6 +240,11 @@ footer {
 
 .detail__favorite {
   cursor: pointer;
+}
+
+.detail__favorite:hover {
+  transition: .8s;
+  opacity: .8;
 }
 
 .detail__runtime, .detail__favorite {
@@ -235,4 +264,14 @@ footer {
   text-transform: uppercase;
   letter-spacing: 2.3px;
   display: inline-block;
+}
+
+.watch__btn:hover {
+  transition: .8s;
+  opacity: .8;
+}
+
+.watch__btn:active {
+  transition: .8s;
+  opacity: .6;
 }
