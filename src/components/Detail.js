@@ -16,7 +16,7 @@ class Detail extends React.Component {
   }
 
   componentWillMount() {
-    const localStorageRef = localStorage.getItem(`detail-Grease`);
+    const localStorageRef = localStorage.getItem('detail-item');
     if(localStorageRef) {
       this.setState({
         details: JSON.parse(localStorageRef)
@@ -25,10 +25,16 @@ class Detail extends React.Component {
   }
 
   render() {
+
+    const backgroundImage = this.state.details.poster;
+
+    console.log(backgroundImage);
+
+
     return (
       <div className="Detail">
         <Header/>
-        <main className="detail-wrapper">
+        <main className="detail-wrapper" style={{backgroundImage: `url(${backgroundImage})` }}>
           <div className="detail">
             <h1 className="detail__title">
               <span className="detail__favorite"><img src={iconFavorite} className="icon_favorite" alt=""/></span>

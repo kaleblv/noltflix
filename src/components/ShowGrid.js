@@ -11,6 +11,9 @@ class ShowGrid extends React.Component {
 
   goToDetail(event) {
     const { details, index } = this.props;
+
+    localStorage.setItem(`detail-item`,JSON.stringify(details));
+
     this.context.router.transitionTo('/detail/' + details.show_title);
   };
 

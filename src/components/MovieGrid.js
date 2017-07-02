@@ -13,7 +13,7 @@ class MovieGrid extends React.Component {
 
     const { details, index } = this.props;
 
-    localStorage.setItem(`detail-${details.show_title}`,JSON.stringify(details));
+    localStorage.setItem(`detail-item`,JSON.stringify(details));
 
 
     this.context.router.transitionTo('/detail/' + details.show_title);
