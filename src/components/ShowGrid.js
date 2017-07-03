@@ -29,7 +29,7 @@ class ShowGrid extends React.Component {
           <img src={details.poster} alt="" className="grid-item__poster"/>
         </div>
         <div className="grid-item__main-info">
-          <h3 className="grid-item__title">{details.title}</h3>
+          <h3 className="grid-item__title">{details.show_title}</h3>
           <p className="grid-item__main-info-details">
             <span className="grid-item__category">{details.category}</span>
             <span className="grid-item__runtime">{details.runtime}</span>

@@ -58,7 +58,7 @@ class App extends React.Component {
         <Header/>
         <main>
           <div className="content">
-            <h1 className="main-title" onClick={(e) => this.addFavorite(e)}> Favorites</h1>
+            <h1 className="main-title">Favorites</h1>
             <h2 className="grid-title">Movies (<span className="grid_quantity"></span>)</h2>
             <section className="grid movie-grid">
               {

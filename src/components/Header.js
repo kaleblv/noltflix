@@ -23,7 +23,7 @@ class Header extends React.Component {
       <header>
         <div className="content">
           <div className="header-content">
-            <a href="/"><img src={logo} className="noltflix_logo" alt=""/></a>
+            <a href="/" className="header-logo"><img src={logo} className="noltflix_logo" alt=""/></a>
             <div className="header-controls">
               <div className="user">
                 <p className="user__menu-wrapper">
@@ -36,6 +36,19 @@ class Header extends React.Component {
               </div>
             <SearchForm/>
             </div>
+          </div>
+          <div className="header-content-mb">
+            <div className="user">
+              <p className="user__menu-wrapper">
+                <a href="" className="user__menu-toggle">
+                  <img src={iconUser} className="user__icon" alt=""/>
+                  <span className="user__name">John Smith</span>
+                  <img src={iconDownArrow} className="user__down-arrow" alt=""/>
+                </a>
+              </p>
+            </div>
+            <a href="/" className="header-logo"><img src={logo} className="noltflix_logo" alt=""/></a>
+            <SearchForm/>
           </div>
         </div>
       </header>)
