@@ -457,6 +457,9 @@ main, footer, header {
   .search__submit-btn {
     position: relative;
     padding: 0; }
+  .search-mb.show {
+    width: 100%;
+    transition: 5s; }
   .user__name, .user__down-arrow, .search__input, .detail__back, .detail__favorite, .watch-wrapper {
     display: none; }
   .user__menu-toggle, .user__icon {

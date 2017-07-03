@@ -39,18 +39,20 @@ class SearchFormMb extends React.Component {
 
   showInput () {
     const searchBtn = document.getElementsByClassName('search__submit-btn-mb');
-    const searchInput = document.getElementsByClassName('search__input-mb');
+    const searchInput = document.getElementsByClassName('search-mb');
+    const searchIcon = document.getElementsByClassName('search__icon');
     const logo = document.getElementsByClassName('noltflix_logo-mb');
     const user = document.getElementsByClassName('user__menu-toggle-mb');
-    searchInput[0].classList.add("show");
-    searchBtn[0].classList.add("show");    
-    logo[0].classList.add("hide");
-    user[0].classList.add("hide");
+    searchInput[0].classList.add('show');
+    searchBtn[0].classList.add('show');
+    logo[0].classList.add('hide');
+    user[0].classList.add('hide');
+    searchIcon[0].classList.add('hide')
   }
 
   render() {
     return (
-      <div className="search">
+      <div className="search search-mb">
         <form className="search__form" onSubmit={this.goToDetail}>
           <input className="search__input search__input-mb" type="text" name="" defaultValue="" ref={(input) => {
             this.searchInput = input
