@@ -46,6 +46,11 @@ class Detail extends React.Component {
       <div className="Detail">
         <Header/>
         <main className="detail-wrapper" style={{backgroundImage: `url(${backgroundImage})` }}>
+          <div className="detail-controls-mb" style={{backgroundImage: `url(${backgroundImage})` }}>
+            <div className="detail__back"><a href="/"><img src={iconBack} className="icon_back" alt=""/></a></div>
+            <a href="" className="watch__btn">Watch now</a>
+            <span className="detail__favorite"><img src={iconFavorite} className="icon_favorite" alt=""/></span>
+          </div>
           <div className="detail">
             <div className="detail__back"><a href="/"><img src={iconBack} className="icon_back" alt=""/></a></div>
             <h1 className="detail__title">{this.state.details.show_title}

@@ -126,7 +126,6 @@ footer {
 .grid-item__poster {
   object-fit: cover;
   height: 155px;
-  max-height: 155px;
   width: 100%;
 }
 
@@ -162,10 +161,6 @@ footer {
   opacity: 0.95;
   background-color: #1b1d1f;
   padding: 50px 61px 50px 102px;
-  width: 590px;
-  display: inline-block;
-  float: left;
-  position: relative;
 }
 
 .detail__back {
@@ -182,12 +177,6 @@ footer {
 
 .detail__back:active {
   opacity: .6;
-}
-
-.watch-wrapper {
-  width: 500px;
-  display: inline-block;
-  float: left;
 }
 
 
@@ -208,6 +197,11 @@ footer {
 .detail__category:hover {
   transition: .8s;
   opacity: .8;
+}
+
+.detail__category:active {
+  transition: .8s;
+  opacity: .6;
 }
 
 .detail__category-wrapper {
@@ -233,18 +227,13 @@ footer {
 }
 
 .watch__btn {
-  width: auto;
-  height: 88px;
   background-color: rgba(27, 29, 31, 0.75);
   border: solid 2px #ffffff;
   font-size: 1.75em;
-  padding: 25px 40px;
-  margin: 30px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2.3px;
-  display: inline-block;
 }
 
 .watch__btn:hover {
@@ -282,6 +271,50 @@ footer {
 
   .grid-item__main-info-details, .grid-item__secondary-info-details {
     font-size: 1.125em;
+  }
+
+  .detail-wrapper {
+    background: none!important;
+  }
+
+  .detail {
+    padding: 25px;
+  }
+
+  .watch__btn {
+    font-size: 1.095890411em;
+  }
+
+  .detail-controls-mb {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .detail__title {
+    margin-top: 0;
+  }
+
+  .detail p {
+    margin-bottom: 45px;
+  }
+
+  .detail__runtime {
+    margin-top: 14px;
+  }
+
+  .detail__release-year {
+    border: none;
+  }
+
+  .detail .detail__rating {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
+
+  .grid-item__poster-wrapper, .grid-item__poster {
+    height: 221px;
   }
 
 }

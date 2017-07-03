@@ -61,6 +61,33 @@
 }
 
 
+// detail
+
+.detail {
+  width: 590px;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.watch-wrapper {
+  width: 500px;
+  display: inline-block;
+  float: left;
+}
+
+.watch__btn {
+  width: auto;
+  height: 88px;
+  padding: 25px 40px;
+  margin: 30px;
+  display: inline-block;
+}
+
+.detail-controls-mb {
+  display: none;
+}
+
 // media queries
 
 /* Small Devices, Tablets */
@@ -88,6 +115,10 @@
     width: 100%;
   }
 
+  .noltflix_logo {
+    width: 127px;
+  }
+
   .App header {
     margin-bottom: 20px;
   }
@@ -97,13 +128,15 @@
     padding: 0;
   }
 
-  .user__name, .user__down-arrow, .search__input {
+  .user__name, .user__down-arrow, .search__input, .detail__back, .detail__favorite , .watch-wrapper {
     display: none;
   }
 
   .user__menu-toggle, .user__icon {
     margin-right: 0;
   }
+
+  // grid
 
 
   .grid {
@@ -120,5 +153,49 @@
 
   .grid-item {
     max-width: 100%;
+  }
+
+  // detail
+
+  .detail-controls-mb {
+    display: inline-block;
+    min-height: 211px;
+    position: relative;
+    width: 100%;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .detail-controls-mb .detail__back , .detail-controls-mb .detail__favorite, .detail-controls-mb .watch__btn{
+    display: inline-block;
+    position: absolute;
+    width: auto;
+  }
+
+  .detail-controls-mb .detail__back {
+    top: 25px;
+    left: 25px;
+  }
+
+  .detail-controls-mb .detail__favorite{
+    top: 25px;
+    right: 25px;
+  }
+
+  .detail-controls-mb .watch__btn {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .detail__runtime, .detail__favorite {
+      width: 100%;
+  }
+
+  .watch__btn {
+    height: auto;
+    padding: 12px 25px;
+    margin: 0;
   }
 }

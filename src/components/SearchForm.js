@@ -43,7 +43,7 @@ class SearchForm extends React.Component {
             this.searchInput = input
           }} placeholder="Search Media"/>
           <button type="submit" className="search__submit-btn">
-            <img src={iconSearch} className="noltflix_logo" alt=""/>
+            <img src={iconSearch} className="icon-search" alt=""/>
           </button>
         </form>
       </div>
