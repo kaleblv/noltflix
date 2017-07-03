@@ -350,6 +350,12 @@ main, footer, header {
   width: 100%;
   height: auto; }
 
+.hide {
+  display: none !important; }
+
+.show {
+  display: inline-block !important; }
+
 .content {
   width: auto;
   max-width: 1440px;
@@ -388,6 +394,9 @@ main, footer, header {
   top: 0;
   right: 0;
   padding: 14px; }
+
+.search__submit-btn-mb {
+  display: none; }
 
 .search {
   position: relative; }
