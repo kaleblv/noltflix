@@ -39,10 +39,12 @@ class SearchFormMb extends React.Component {
 
   showInput () {
     const searchBtn = document.getElementsByClassName('search__submit-btn-mb');
-    const searchInput = document.getElementsByClassName('search-mb');
+    const search = document.getElementsByClassName('search-mb');
+    const searchInput = document.getElementsByClassName('search__input-mb');
     const searchIcon = document.getElementsByClassName('search__icon');
     const logo = document.getElementsByClassName('noltflix_logo-mb');
     const user = document.getElementsByClassName('user__menu-toggle-mb');
+    search[0].classList.add('show');
     searchInput[0].classList.add('show');
     searchBtn[0].classList.add('show');
     logo[0].classList.add('hide');
