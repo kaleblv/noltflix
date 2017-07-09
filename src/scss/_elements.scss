@@ -71,6 +71,12 @@ header {
 
 .header-menu__item {
   cursor: pointer;
+
+}
+
+.header-menu__item a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-menu__item:not(:last-child) {
@@ -337,6 +343,15 @@ footer {
 
   .grid-item__poster-wrapper, .grid-item__poster {
     height: 221px;
+  }
+
+  .header-menu-mb {
+    text-align: left;
+    padding: 30px 25px;
+  }
+
+  .header-menu__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-class HeaderMenu extends React.Component {
+class HeaderMenuMb extends React.Component {
   render() {
     return(
-      <ul className="header-menu hide">
+      <ul className="header-menu header-menu-mb hide">
         <li className="header-menu__item">Home</li>
         <li className="header-menu__item"><a href="/">My Favorites</a></li>
         <li className="header-menu__item sign-out">Sign Out</li>
@@ -13,4 +13,4 @@ class HeaderMenu extends React.Component {
   }
 }
 
-export default HeaderMenu;
+export default HeaderMenuMb;

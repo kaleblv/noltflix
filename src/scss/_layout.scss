@@ -53,13 +53,13 @@
   position: relative;
 }
 
-
 .header-menu {
   position: absolute;
   top: 33px;
   left: -22px;
   padding: 20px 0;
   width: 175px;
+  z-index: 1;
 }
 
 
@@ -179,6 +179,12 @@
 
   .user__menu-toggle, .user__icon {
     margin-right: 0;
+  }
+
+  .header-menu-mb {
+    width: 100%;
+    top: 56px;
+    left: 0px;
   }
 
   // grid
