@@ -42,12 +42,6 @@ class App extends React.Component {
   }
 
 
-  addMovie (movie) {
-    const movies = {...this.state.movies};
-    const timestamp = Date.now();
-    movies[`movie-${timestamp}`] = movie;
-    this.setState({movies});
-  }
 
 
 
