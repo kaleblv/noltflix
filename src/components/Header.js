@@ -12,16 +12,12 @@ class Header extends React.Component {
 
   showResults(event) {
     event.preventDefault();
-    console.log('you changed the url');
-
-    //get the text from the box
-    console.log(this.detailInput);
   };
 
 
   render() {
     return (
-      <header>
+      <header id="main-header">
         <div className="content">
           <div className="header-content">
             <a href="/" className="header-logo"><img src={logo} className="noltflix_logo" alt=""/></a>

@@ -34,6 +34,10 @@
   display: none;
 }
 
+.search__input {
+  padding: 17px 65px 16px 25px;
+}
+
 .search__submit-btn {
   position: absolute;
   top: 0;
@@ -119,6 +123,14 @@
     width: 100%;
   }
 
+  #main-header.searching {
+    padding: 0;
+  }
+
+  .header-content-mb.searching {
+    padding: 0;
+  }
+
   .noltflix_logo {
     width: 127px;
   }
@@ -128,8 +140,23 @@
   }
 
   .search__submit-btn {
-    position: relative;
+    position: absolute;
     padding: 0;
+    top: 23px;
+    right: 23px;
+  }
+
+  .search__close-mb {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 25px;
+  }
+
+  .search__input-mb {
+    width: 100%;
+    padding: 17px 70px 16px 70px;
+    height: 72px;
   }
 
   .search-mb.show {
