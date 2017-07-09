@@ -18,13 +18,18 @@ class ShowGrid extends React.Component {
   };
 
 
+  componentDidMount() {
+    const counter = document.getElementsByClassName("grid-item__show");
+    this.props.showCounter(counter.length);
+  }
+
   render() {
 
     const { details, index } = this.props;
 
     return (
 
-      <div className="grid-item" onClick={(e) => this.goToDetail(e)}>
+      <div className="grid-item grid-item__show" onClick={(e) => this.goToDetail(e)}>
         <div className="grid-item__poster-wrapper">
           <img src={details.poster} alt="" className="grid-item__poster"/>
         </div>

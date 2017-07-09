@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Header from './Header';
 import Footer from './Footer';
 import MovieGrid from './MovieGrid';
@@ -17,7 +18,9 @@ class App extends React.Component {
     search: {},
     movies: {},
     shows: {},
-    detail: {}
+    detail: {},
+    movieCount: null,
+    showCount: null,
   }
 
 
@@ -44,6 +47,13 @@ class App extends React.Component {
 
 
 
+  movieCounter = (dataFromChild) => {
+    this.setState({ movieCount: dataFromChild });
+  }
+
+  showCounter = (dataFromChild) => {
+    this.setState({ showCount: dataFromChild });
+  }
 
 
   render() {
@@ -53,20 +63,20 @@ class App extends React.Component {
         <main>
           <div className="content">
             <h1 className="main-title">Favorites</h1>
-            <h2 className="grid-title">Movies (<span className="grid_quantity"></span>)</h2>
-            <section className="grid movie-grid">
+            <h2 className="grid-title">Movies (<span className="grid_quantity">{this.state.movieCount}</span>)</h2>
+            <section className="grid movie-grid" ref="movieGrid">
               {
                 Object
                   .keys(this.state.movies)
-                  .map(key => <MovieGrid key={key} index={key} details={this.state.movies[key]} addMovie={this.addMovie} /> )
+                  .map(key => <MovieGrid key={key} index={key} details={this.state.movies[key]} movieCounter={this.movieCounter}/> )
               }
             </section>
-            <h2 className="grid-title">Tv Shows (<span className="grid_quantity"></span>)</h2>
+            <h2 className="grid-title">Tv Shows (<span className="grid_quantity">{this.state.showCount}</span>)</h2>
             <section className="grid show-grid">
               {
                 Object
                   .keys(this.state.shows)
-                  .map(key => <ShowGrid key={key} index={key} details={this.state.shows[key]} /> )
+                  .map(key => <ShowGrid key={key} index={key} details={this.state.shows[key]} showCounter={this.showCounter} /> )
               }
             </section>
           </div>
