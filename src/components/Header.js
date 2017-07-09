@@ -4,6 +4,7 @@ import SearchFormMb from './SearchFormMb';
 import logo from '../images/noltflix-logo.svg';
 import iconUser from '../images/icon-user.svg';
 import iconDownArrow from '../images/icon-down-arrow.svg';
+import HeaderMenu from './HeaderMenu';
 
 
 
@@ -14,6 +15,11 @@ class Header extends React.Component {
     event.preventDefault();
   };
 
+  showHeaderMenu() {
+    const headerMenu = document.getElementsByClassName('header-menu');
+    const headerMenuFlag = headerMenu[0].classList.contains('show')
+    headerMenuFlag === false ? headerMenu[0].classList.add('show') : headerMenu[0].classList.remove('show');
+  }
 
   render() {
     return (
@@ -22,16 +28,17 @@ class Header extends React.Component {
           <div className="header-content">
             <a href="/" className="header-logo"><img src={logo} className="noltflix_logo" alt=""/></a>
             <div className="header-controls">
-              <div className="user">
+              <div className="user" onClick={this.showHeaderMenu}>
                 <p className="user__menu-wrapper">
-                  <a href="" className="user__menu-toggle">
+                  <span className="user__menu-toggle">
                     <img src={iconUser} className="user__icon" alt=""/>
                     <span className="user__name">John Smith</span>
                     <img src={iconDownArrow} className="user__down-arrow" alt=""/>
-                  </a>
+                  </span>
                 </p>
               </div>
             <SearchForm/>
+            <HeaderMenu/>
             </div>
           </div>
           <div className="header-content-mb">
