@@ -1,5 +1,6 @@
 import React from 'react';
 import iconSearch from '../images/icon-search.svg';
+import Notification from './Notification';
 
 
 
@@ -19,7 +20,24 @@ class SearchForm extends React.Component {
 
     event.preventDefault();
 
+    function checkStatus(response) {
+      if (response.status >= 200 && response.status < 300) {
+        return response
+      } else {
+        var error = new Error(response.statusText)
+        error.response = response
+        if (error.response.status === 404) {
+          const notification = document.getElementsByClassName('notification');
+          notification[0].classList.remove('hide');
+          notification[0].classList.add('show');
+          setTimeout(() => { notification[0].classList.remove('show'); notification[0].classList.add('hide'); }, 2500);
+        }
+        throw error
+      }
+    }
+
     fetch('https://netflixroulette.net/api/api.php?title=' + this.searchInput.value )
+    .then(checkStatus)
     .then((response) => {
         return response.json()
     })
@@ -31,6 +49,8 @@ class SearchForm extends React.Component {
           localStorage.setItem(`detail-item`,JSON.stringify(this.state.search));
           this.context.router.transitionTo('/detail/' + this.state.search.show_title)
         }
+    }).catch((error) => {
+      console.log('request failed', error)
     })
 
   };
@@ -46,6 +66,7 @@ class SearchForm extends React.Component {
             <img src={iconSearch} className="icon-search" alt=""/>
           </button>
         </form>
+        <Notification/>
       </div>
     )
   }

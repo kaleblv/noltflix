@@ -416,6 +416,13 @@ main, footer, header {
   width: 175px;
   z-index: 1; }
 
+.notification {
+  width: 258px;
+  padding: 18px 15px 15px;
+  position: absolute;
+  top: 52px;
+  left: 0; }
+
 .grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -603,6 +610,12 @@ header {
 
 .header-menu__item.sign-out {
   font-weight: 400; }
+
+.notification {
+  background-color: #32363A;
+  text-align: center;
+  font-size: 1.125em;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.35); }
 
 main {
   background-color: #282b31; }

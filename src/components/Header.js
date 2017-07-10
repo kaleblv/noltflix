@@ -18,7 +18,6 @@ class Header extends React.Component {
   showHeaderMenu() {
     const headerMenu = document.getElementsByClassName('header-menu');
     const headerMenuFlag = headerMenu[0].classList.contains('show')
-    console.log(headerMenu)
     headerMenuFlag === false ? headerMenu[0].classList.add('show') : headerMenu[0].classList.remove('show');
   }
 
