@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Rating from './Rating';
+//import Rating from './Rating';
+import iconFavoriteAdded from '../images/icon-favorite-added.svg';
+
 
 class MovieGrid extends React.Component {
 
@@ -32,15 +34,24 @@ class MovieGrid extends React.Component {
 
     const { details, index } = this.props;
 
-    const detailRating = Math.floor(details.rating)
+    const detailRating = Math.floor(details.rating);
+
+    let gridPoster;
 
 
+    if (details.poster !== "") {
+      console.log('have image');
+      gridPoster = details.poster
+    } else {
+      console.log('dont have image');
+      gridPoster = iconFavoriteAdded
+    }
 
     return (
 
       <div className="grid-item grid-item__movie" ref="itemMovie" onClick={(e) => this.goToDetail(e)}>
         <div className="grid-item__poster-wrapper">
-          <img src={details.poster} alt="" className="grid-item__poster"/>
+          <img src={gridPoster} alt="" className="grid-item__poster"/>
         </div>
         <div className="grid-item__main-info">
           <h3 className="grid-item__title">{details.show_title}</h3>
@@ -53,7 +64,6 @@ class MovieGrid extends React.Component {
           <p className="grid-item__secondary-info-details">
             <span className="grid-item__type">Movie / <span className="grid-item__release_year">{details.release_year}</span></span>
             <span className="grid-item__rating">{details.rating}</span>
-            <Rating rating={detailRating}/>
           </p>
         </div>
       </div>)

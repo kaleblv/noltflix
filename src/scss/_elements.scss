@@ -164,6 +164,39 @@ footer {
   width: 100%;
 }
 
+.grid-item__poster-wrapper {
+  position: relative;
+}
+
+.grid-item__poster:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 155px;
+  background: #282b31;
+}
+
+.grid-item__poster:after {
+  content: "Poster not available";
+  opacity: .8;
+  font-size: 16px;
+  color: #FFF;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  font-weight: 300;
+  background: #282b31;
+  text-align: center;
+}
+
 .grid-item__main-info {
   background-color: #32363c;
   padding: 13px 15px 15px;
