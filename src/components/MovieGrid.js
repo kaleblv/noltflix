@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Rating from './Rating';
 
 class MovieGrid extends React.Component {
 
@@ -31,6 +32,8 @@ class MovieGrid extends React.Component {
 
     const { details, index } = this.props;
 
+    const detailRating = Math.floor(details.rating)
+
 
 
     return (
@@ -50,6 +53,7 @@ class MovieGrid extends React.Component {
           <p className="grid-item__secondary-info-details">
             <span className="grid-item__type">Movie / <span className="grid-item__release_year">{details.release_year}</span></span>
             <span className="grid-item__rating">{details.rating}</span>
+            <Rating rating={detailRating}/>
           </p>
         </div>
       </div>)
