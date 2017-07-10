@@ -356,10 +356,6 @@ main, footer, header {
 .show {
   display: inline-block !important; }
 
-.icon_favorite.added {
-  fill: #D00000 !important;
-  transition: 3s; }
-
 .content {
   width: auto;
   max-width: 1440px;

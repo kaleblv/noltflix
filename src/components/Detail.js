@@ -112,11 +112,14 @@ class Detail extends React.Component {
     let refMovie = base.database().ref('/movies');
     let refShow = base.database().ref('/shows');
     let detailIcon = Array.from(document.getElementsByClassName('icon_favorite'));
-    detailIcon.forEach(function(el) {
-      el.classList.add('added');
-      el.setAttribute("src", iconFavoriteAdded);
-    });
-    detail.mediatype === 0 ? refMovie.push(detail) : refShow.push(detail);
+
+    if (!detailIcon[0].classList.contains('added') || !detailIcon[1].classList.contains('added')) {
+      detailIcon.forEach(function(el) {
+        el.classList.add('added');
+        el.setAttribute("src", iconFavoriteAdded);
+      });
+      detail.mediatype === 0 ? refMovie.push(detail) : refShow.push(detail);
+    }
   }
 
 
