@@ -536,7 +536,10 @@ main, footer, header {
   .watch__btn {
     height: auto;
     padding: 12px 25px;
-    margin: 0; } }
+    margin: 0; }
+  .notification {
+    top: 72px;
+    width: 100%; } }
 
 header {
   background-color: #d00000;

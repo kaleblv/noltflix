@@ -66,7 +66,7 @@ class SearchForm extends React.Component {
             <img src={iconSearch} className="icon-search" alt=""/>
           </button>
         </form>
-        <Notification/>
+        <Notification copy="Not Found"/>
       </div>
     )
   }
